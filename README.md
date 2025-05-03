@@ -32,9 +32,7 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-## Чек-лист для проверки перед отправкой задания
+## Примеры запросов
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+GET-запрос на получение достижений: https://kittymeowww.servebeer.com/api/achievements/
+POST-запрос на добавление котика: https://kittymeowww.servebeer.com/api/cats/
