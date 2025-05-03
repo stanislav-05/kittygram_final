@@ -34,5 +34,5 @@ pip install -r requirements.txt
 
 ## Примеры запросов
 
-GET-запрос на получение достижений: https://kittymeowww.servebeer.com/api/achievements/
-POST-запрос на добавление котика: https://kittymeowww.servebeer.com/api/cats/
+- GET-запрос на получение достижений: ```https://kittymeowww.servebeer.com/api/achievements/```
+- POST-запрос на добавление котика: ```https://kittymeowww.servebeer.com/api/cats/```
