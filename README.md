@@ -18,6 +18,12 @@ python -m venv venv
 ```
 source venv/Scripts/activate
 ```
+Установите зависимости из директории backend:
+
+```
+pip install -r requirements.txt
+```
+
 ## Чек-лист для проверки перед отправкой задания
 
 - Проект Taski доступен по доменному имени, указанному в `tests.yml`.
