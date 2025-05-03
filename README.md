@@ -31,7 +31,15 @@ source venv/Scripts/activate
 ```
 pip install -r requirements.txt
 ```
-
+Собираем образы:
+```
+cd frontend
+docker build -t username/taski_frontend .
+cd ../backend
+docker build -t username/taski_backend .
+cd ../gateway
+docker build -t username/taski_gateway .
+```
 ## Примеры запросов
 
 - GET-запрос на получение достижений: ```https://kittymeowww.servebeer.com/api/achievements/```
