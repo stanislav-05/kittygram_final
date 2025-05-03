@@ -40,6 +40,26 @@ docker build -t username/taski_backend .
 cd ../gateway
 docker build -t username/taski_gateway .
 ```
+
+Загружаем образы на Docker Hub:
+```
+docker push username/taski_frontend
+docker push username/taski_backend
+docker push username/taski_gateway
+```
+
+Запустите Docker Compose:
+```
+docker compose -f docker-compose.production.yml up
+```
+
+Выполните миграции и соберите статику:
+```
+docker compose -f docker-compose.production.yml exec backend python manage.py migrate
+docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
+docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
+```
+
 ## Примеры запросов
 
 - GET-запрос на получение достижений: ```https://kittymeowww.servebeer.com/api/achievements/```
