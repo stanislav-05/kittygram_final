@@ -32,3 +32,10 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+### Примеры запросов к API:
+- POST-запрос на добавление котика: ```http://kittymeowww.servebeer.com/api/cats/```
+- GET-запрос на получение списка достижений котиков: ```http://kittymeowww.servebeer.com/api/achievements/```
+
+
+### Автор:
+Марков Станислав Андреевич, ссылка на GitHub: https://github.com/stanislav-05
